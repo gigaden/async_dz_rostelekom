@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Все магазины</title>
+</head>
+<body>
+    <a href="/">Главная</a>
+    <h1>Список всех магазинов в БД:</h1>
+    {% for store in all_stores %}
+      <p>id: {{ store.id }} , адрес: {{ store.address }}</p>
+    {% endfor %}
+</body>
+</html>

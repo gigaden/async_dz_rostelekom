@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Все товары</title>
+</head>
+<body>
+    <a href="/">Главная</a>
+    <h1>Список всех товаров в БД:</h1>
+    {% for item in all_items %}
+      <p>id: {{ item.id }} , название: {{ item.name }}, цена: {{ item.price }}</p>
+    {% endfor %}
+</body>
+</html>

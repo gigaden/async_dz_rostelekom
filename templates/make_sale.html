@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавляем новую продажу</title>
+    <link href="{{ url_for('static', path='/make_sale.css') }}" rel="stylesheet">
+</head>
+<body>
+<h2>Добавьте запись о новой продаже</h2>
+    <form action="./make_sale" method="post">
+        <p>
+            id Магазина:<br>
+            <input name="id_stores" type="number"/>
+        </p>
+        <p>
+            id Товара:<br>
+            <input name="id_items" type="number" />
+        </p>
+        <input type="submit" value="Send" />
+    </form>
+<a href = '/'>вернуться на главную</a>
+
+</body>
+</html>

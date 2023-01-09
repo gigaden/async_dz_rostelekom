@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Топ 10 магазинов</title>
+</head>
+<body>
+    <a href="/">Главная</a>
+    <h1>Список ТОП 10 магазинов:</h1>
+    {% for store in top_stores %}
+      <p>id: {{ store.id }}, адрес: {{ store.address }}, выручка {{ store.total_sale }}</p>
+    {% endfor %}
+</body>
+</html>

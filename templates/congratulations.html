@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поздравляю</title>
+    <link href="{{ url_for('static', path='/congratulations.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h2>Бро, поздравляю, ты только-что добавил новую продажу со следующими параметрами:</h2>
+    <p>Номер магазина {{ id_stores }}</p>
+    <p>Номер товара {{ id_items }}</p>
+    <a href = '/'>Вернуться на главную</a>
+</body>
+</html>

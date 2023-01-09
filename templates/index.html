@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link href="{{ url_for('static', path='/index.css') }}" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Веб версия для доступа к запросам по ТЗ</h1>
+    </header>
+
+    <main>
+        <p><a href="html_views/all_stores">Посмотреть все магазины</a></p>
+        <p><a href="html_views/all_items">Посмотреть все товары</a></p>
+        <p><a href="html_views/make_sale">Записать новую продажу в БД</a></p>
+        <p><a href="html_views/top_stores">ТОП 10 магазинов с выручкой</a></p>
+        <p><a href="html_views/top_items">ТОП 10 товаров</a></p>
+    </main>
+
+    <footer>
+        <p><a href="/docs"> Воспользоваться документацией Swagger UI /docs</a></p>
+    </footer>
+
+
+</body>
+</html>
